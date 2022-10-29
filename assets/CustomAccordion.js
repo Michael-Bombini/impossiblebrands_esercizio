@@ -5,7 +5,7 @@ class CustomAccordion extends HTMLElement {
 
   render() {
     this.shadowRoot.innerHTML = `<h1>test</h1>
-    <p>lorem ipsum dolor sit amet</p>`;
+    <p>test</p>`;
   }
 
   
