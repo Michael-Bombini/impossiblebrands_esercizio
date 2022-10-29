@@ -361,9 +361,9 @@
               {%- endif -%}
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
+            {%- when 'collapsible_tab' -%}
                 <script src="{{ 'CustomAccordion.js' | asset_url }}" defer="defer"></script>
                 <custom-accordion>Lorem ipsum dolor sit amet.</custom-accordion>
-            {%- when 'collapsible_tab' -%}
 
               {%- comment -%} <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                 <details id="Details-{{ block.id }}-{{ section.id }}">
