@@ -366,6 +366,7 @@
                 <script src="{{ 'CustomAccordion.js' | asset_url }}" defer="defer"></script>
                 
                 <custom-accordion>test</custom-accordion> {%- endcomment -%}
+                {{product.quantity}}
               <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                 <details id="Details-{{ block.id }}-{{ section.id }}">
                   <summary>
