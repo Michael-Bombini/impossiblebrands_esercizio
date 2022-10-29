@@ -361,12 +361,12 @@
               {%- endif -%}
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
+            {%- when 'collapsible_tab' -%}
+{%- comment -%} 
                 <script src="{{ 'CustomAccordion.js' | asset_url }}" defer="defer"></script>
                 
-                <custom-accordion>test</custom-accordion>
-            {%- when 'collapsible_tab' -%}
-
-              {%- comment -%} <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
+                <custom-accordion>test</custom-accordion> {%- endcomment -%}
+              <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                 <details id="Details-{{ block.id }}-{{ section.id }}">
                   <summary>
                     <div class="summary__title">
@@ -382,7 +382,7 @@
                     {{ block.settings.page.content }}
                   </div>
                 </details>
-              </div> {%- endcomment -%}
+              </div>
             {%- when 'quantity_selector' -%}
               <div
                 class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
