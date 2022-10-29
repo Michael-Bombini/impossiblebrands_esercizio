@@ -8,4 +8,7 @@ class CustomAccordion extends HTMLElement {
     <p>lorem ipsum dolor sit amet</p>`;
   }
 
+  
+
 }
+window.customElements.define('custom-accordion', CustomAccordion);
