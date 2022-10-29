@@ -362,7 +362,7 @@
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
             {%- when 'collapsible_tab' -%}
-              <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
+              {%- comment -%} <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                 <details id="Details-{{ block.id }}-{{ section.id }}">
                   <summary>
                     <div class="summary__title">
@@ -377,7 +377,7 @@
                     {{ block.settings.content }}
                     {{ block.settings.page.content }}
                   </div>
-                </details>
+                </details> {%- endcomment -%}
               </div>
             {%- when 'quantity_selector' -%}
               <div
