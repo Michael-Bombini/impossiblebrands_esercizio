@@ -359,11 +359,10 @@
                   {{ product.description }}
                 </div>
               {%- endif -%}
+              Lorem ipsum dolor sit amet.
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
-                {{ product.price }}
-            {%- comment -%} {%- when 'collapsible_tab' -%} {%- endcomment -%}
-            
+            {%- when 'collapsible_tab' -%}
 {%- comment -%} 
                 <script src="{{ 'CustomAccordion.js' | asset_url }}" defer="defer"></script>
                 
