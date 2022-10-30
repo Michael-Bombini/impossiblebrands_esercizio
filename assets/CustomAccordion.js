@@ -7,8 +7,5 @@ class CustomAccordion extends HTMLElement {
     this.shadowRoot.innerHTML = `<h1>test</h1>
     <p>test</p>`;
   }
-
-  
-
 }
-window.customElements.define('custom-accordion', CustomAccordion);
+window.customElements.define("custom-accordion", CustomAccordion);
