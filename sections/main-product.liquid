@@ -359,14 +359,11 @@
                   {{ product.description }}
                 </div>
               {%- endif -%}
-              Lorem ipsum dolor sit amet.
+                   <script src="{{ 'CustomAccordion.js' | asset_url }}" defer="defer"></script>
+                <custom-accordion>test</custom-accordion> 
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
             {%- when 'collapsible_tab' -%}
-{%- comment -%} 
-                <script src="{{ 'CustomAccordion.js' | asset_url }}" defer="defer"></script>
-                
-                <custom-accordion>test</custom-accordion> {%- endcomment -%}
               {%- comment -%} <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                 <details id="Details-{{ block.id }}-{{ section.id }}">
                   <summary>
