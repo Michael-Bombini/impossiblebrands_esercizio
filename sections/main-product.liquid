@@ -361,7 +361,8 @@
               {%- endif -%}
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
-            {%- when 'collapsible_tab' -%}
+                {{ product.price }}
+            {%- comment -%} {%- when 'collapsible_tab' -%} {%- endcomment -%}
             
 {%- comment -%} 
                 <script src="{{ 'CustomAccordion.js' | asset_url }}" defer="defer"></script>
