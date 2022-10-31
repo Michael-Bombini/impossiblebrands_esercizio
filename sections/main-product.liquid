@@ -362,9 +362,9 @@
                    <link type="text/css" href="{{ 'CustomAccordion.css' | asset_url }}" rel="stylesheet">
                    <script src="{{ 'CustomAccordion.js' | asset_url }}" defer="defer"></script>
                        <div class="accordions">
-                          <div class="accordion">accordion 1</div>
+                          <div class="accordion">Product Description</div>
                             <div class="content">
-                              <div>test</div>
+                              <div>{{product.description}}</div>
                             </div>
 
                           <div class="accordion">accordion 2</div>
@@ -378,7 +378,7 @@
                             </div>
                       </div>
   
-                   {{product.description}}
+                  
                    {% for product_option in product.options_with_values %}
     <li>{{ product_option.name }}</li>
   {% endfor %}
