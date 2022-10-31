@@ -354,11 +354,11 @@
                 {%- endform -%}
               </div>
             {%- when 'description' -%}
-              {%- if product.description != blank -%}
+              {%- comment -%} {%- if product.description != blank -%}
                 <div class="product__description rte quick-add-hidden">
                   {{ product.description }}
                 </div>
-              {%- endif -%}
+              {%- endif -%} {%- endcomment -%}
                    <link type="text/css" href="{{ 'CustomAccordion.css' | asset_url }}" rel="stylesheet">
                    <script src="{{ 'CustomAccordion.js' | asset_url }}" defer="defer"></script>
                        <div class="accordions">
