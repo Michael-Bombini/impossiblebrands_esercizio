@@ -1,4 +1,10 @@
 
+.accordions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .accordion , .content {width: 100%;}
 .accordion {
   background-color: #121212;
@@ -28,10 +34,7 @@
   padding: 1.5rem;
   display: none;
 }
-.accordions {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
+.accordion-title {
+
+}
