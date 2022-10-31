@@ -1,4 +1,4 @@
-import 'CustomAccordion.css';
+import './CustomAccordion.css';
 class CustomAccordion extends HTMLElement {
   constructor() {
     super();
