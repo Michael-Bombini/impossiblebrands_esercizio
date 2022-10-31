@@ -1,11 +1,13 @@
-
 .accordions {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.accordion , .content {width: 100%;}
+.accordion,
+.content {
+  width: 100%;
+}
 .accordion {
   background-color: #121212;
   font-weight: 700;
@@ -36,5 +38,6 @@
 }
 
 .accordion-title {
-
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
