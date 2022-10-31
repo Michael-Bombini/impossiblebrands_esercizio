@@ -1,0 +1,45 @@
+.accordions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.accordion,
+.content {
+  width: 100%;
+}
+.accordion {
+  background-color: #121212;
+  font-weight: 700;
+  padding: 2em;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  margin-top: 0;
+}
+.accordion:after {
+  content: "+";
+  vertical-align: middle;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+.active:after {
+  content: "X";
+}
+
+.content {
+  background-color: #181818;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  display: none;
+}
+
+.accordion-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #fff;
+  padding: 0.5rem;
+}
