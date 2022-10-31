@@ -8,6 +8,7 @@
   padding: 18px;
   width: 70%;
   border: none;
+  margin-top: 0;
 }
 .accordion:after {
   content: "+";
