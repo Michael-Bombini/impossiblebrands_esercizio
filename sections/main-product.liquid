@@ -367,7 +367,7 @@
               {%- endif -%} {%- endcomment -%}
                    <link type="text/css" href="{{ 'CustomAccordion.css' | asset_url }}" rel="stylesheet">
                    <script src="{{ 'CustomAccordion.js' | asset_url }}" defer="defer"></script>
-                       {%- comment -%} <div class="accordions">
+                      <div class="accordions">
                           <div class="accordion">Product Description</div>
                             <div class="content">
                               <div>{{product.description}}</div>
@@ -387,8 +387,8 @@
                               {% endfor %}
                               </div>
                             </div>
-                      </div> {%- endcomment -%}
-                      <custom-accordion></custom-accordion>
+                      </div> 
+                      {%- comment -%} <custom-accordion></custom-accordion> {%- endcomment -%}
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
             {%- when 'collapsible_tab' -%}
