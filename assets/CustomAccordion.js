@@ -75,27 +75,29 @@ video {
 class CustomAccordion extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({mode : 'open'});
+    this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(template.content.cloneNode(true));
-    
-
-  
   }
 
-  showContent(){
-    const element = this.shadowRoot.querySelector('.accordion')
-    const content = this.shadowRoot.querySelector('.content')
+  showContent() {
+    const element = this.shadowRoot.querySelector(".accordion");
+    const content = this.shadowRoot.querySelector(".content");
+    if (element.nextElementSibling.style.display === "block") {
+      element.nextElementSibling.style.display = "none";
+      element.classList.remove("active");
+    } else {
+      element.nextElementSibling.style.display = "block";
+      element.classList.add("active");
+    }
   }
 
-  
   connectedCallBack() {
-    const element = this.shadowRoot.querySelector('.accordion')
-    const content = this.shadowRoot.querySelector('.content')
-    element.addEventListener('click' , () => {
-         this.showContent();
-    })
+    const element = this.shadowRoot.querySelector(".accordion");
+    const content = this.shadowRoot.querySelector(".content");
+    element.addEventListener("click", () => {
+      this.showContent();
+    });
   }
-
 }
 
 window.customElements.define("custom-accordion", CustomAccordion);
