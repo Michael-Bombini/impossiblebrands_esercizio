@@ -94,7 +94,7 @@ class CustomAccordion extends HTMLElement {
   connectedCallBack() {
     const element = this.shadowRoot.querySelector(".accordion");
     const content = this.shadowRoot.querySelector(".content");
-    this.shadowRoot.element.addEventListener("click", () => {
+    this.shadowRoot.addEventListener("click", () => {
       this.showContent();
     });
   }
