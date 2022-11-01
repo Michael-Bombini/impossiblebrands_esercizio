@@ -78,6 +78,14 @@ class CustomAccordion extends HTMLElement {
     this.attachShadow({mode : 'open'});
     this.shadowRoot.appendChild(template.content.cloneNode(true));
   }
+
+  connectedCallBack() {
+    const element = this.shadowRoot.querySelector('.accordion')
+    element.addEventListener('click' , () => {
+
+    })
+  }
+
 }
 
 window.customElements.define("custom-accordion", CustomAccordion);
