@@ -14,6 +14,8 @@
 
 const template = document.createElement("template");
 template.innerHTML = ` 
+<style>
+
 video {
   width: 100%;
 }
@@ -62,6 +64,7 @@ video {
   border-bottom: 1px solid #fff;
   padding: 0.5rem;
 }
+</style>
 
 <div class="accordion">Product Description</div>
 <div class="content">
