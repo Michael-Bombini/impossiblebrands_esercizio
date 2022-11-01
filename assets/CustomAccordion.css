@@ -1,3 +1,6 @@
+video {
+  width: 100%;
+}
 .accordions {
   display: flex;
   flex-direction: column;
@@ -11,19 +14,18 @@
 .accordion {
   background-color: #121212;
   font-weight: 700;
-  padding: 2em;
   color: #fff;
   text-align: center;
-  cursor: pointer;
-  padding: 18px;
-  border: none;
   margin-top: 0;
+  border: none;
+  padding: 2.5rem;
+  cursor: pointer;
 }
 .accordion:after {
   content: "+";
   vertical-align: middle;
   font-size: 1rem;
-  margin-left: 0.5rem;
+  margin-left: 1.5rem;
 }
 .active:after {
   content: "X";
@@ -32,14 +34,14 @@
 .content {
   background-color: #181818;
   color: #fff;
-  text-align: center;
   padding: 1.5rem;
+  text-align: center;
   display: none;
 }
 
 .accordion-title {
   font-weight: 600;
-  margin-bottom: 0.5rem;
   border-bottom: 1px solid #fff;
+  margin-bottom: 0.5rem;
   padding: 0.5rem;
 }
