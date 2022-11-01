@@ -81,6 +81,7 @@ class CustomAccordion extends HTMLElement {
 
   
   }
+
   showContent(){
     const element = this.shadowRoot.querySelector('.accordion')
     const content = this.shadowRoot.querySelector('.content')
@@ -91,7 +92,7 @@ class CustomAccordion extends HTMLElement {
     const element = this.shadowRoot.querySelector('.accordion')
     const content = this.shadowRoot.querySelector('.content')
     element.addEventListener('click' , () => {
-         
+         this.showContent();
     })
   }
 
