@@ -32,9 +32,9 @@ video {
 .accordion {
   background-color: #121212;
   font-weight: 700;
-  padding: 2em;
   color: #fff;
   text-align: center;
+  padding: 2rem;
   cursor: pointer;
   padding: 18px;
   border: none;
