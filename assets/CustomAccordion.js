@@ -83,13 +83,7 @@ class CustomAccordion extends HTMLElement {
     const element = this.shadowRoot.querySelector('.accordion')
     const content = this.shadowRoot.querySelector('.content')
     element.addEventListener('click' , () => {
-            if (element.nextElementSibling.style.display === "block") {
-              content.style.display = "none";
-              element.classList.remove("active");
-            } else {
-              content.style.display = "block";
-              element.classList.add("active");
-            }
+         
     })
   }
 
