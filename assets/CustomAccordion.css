@@ -17,8 +17,8 @@ video {
   color: #fff;
   text-align: center;
   margin-top: 0;
-  padding: 1.5rem;
-  padding: 2em;
+  border: none;
+  padding: 2.5rem;
   cursor: pointer;
 }
 .accordion:after {
