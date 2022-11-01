@@ -77,6 +77,13 @@ class CustomAccordion extends HTMLElement {
     super();
     this.attachShadow({mode : 'open'});
     this.shadowRoot.appendChild(template.content.cloneNode(true));
+    
+
+  
+  }
+  showContent(){
+    const element = this.shadowRoot.querySelector('.accordion')
+    const content = this.shadowRoot.querySelector('.content')
   }
 
   
