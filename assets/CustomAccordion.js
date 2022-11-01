@@ -87,7 +87,7 @@ class CustomAccordion extends HTMLElement {
               content.style.display = "none";
               element.classList.remove("active");
             } else {
-              element.nextElementSibling.style.display = "block";
+              content.style.display = "block";
               element.classList.add("active");
             }
     })
